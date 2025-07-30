@@ -41,7 +41,7 @@ private extension Int64 {
 ///  * COREDATACLASS - The Core Data class name
 ///  * SLATECLASS - The Slate class name
 let template_CD_Swift_SlateObjectConvertible: String = """
-extension {COREDATACLASS}: SlateObjectConvertible {
+extension {COREDATACLASS}: @retroactive SlateObjectConvertible {
 
     /**
      Instantiates an immutable Slate class from the receiving Core Data class.
